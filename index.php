@@ -34,12 +34,12 @@
         <h2>INFORMATION</h2>
         <dl>
           <?php
-            $infoPosts = get_posts('numberposts=3&category=4');
+            $infoPosts = get_posts('numberposts=3&category=3');
             foreach($infoPosts as $post):
           ?>
           <dt><?php the_time('Y-m-d'); ?></dt>
           <dd>
-            <span class="tab tag_<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_slug; } ?>"><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?></span>
+            <span class="tab tag_<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>"><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?></span>
             <a href="<?php the_permalink(); ?>/sample"><?php the_title(); ?></a>を更新しました。
           </dd>
           <?php endforeach; ?>
