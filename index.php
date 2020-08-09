@@ -33,67 +33,35 @@
       <div class="information">
         <h2>INFORMATION</h2>
         <dl>
-          <dt>2013-08-04</dt>
+          <?php
+            $infoPosts = get_posts('numberposts=3&category=4');
+            foreach($infoPosts as $post):
+          ?>
+          <dt><?php the_time('Y-m-d'); ?></dt>
           <dd>
-            <span class="tab tag_gyoumu">業務について</span>
-            <a href="sample.html">2012年（平成24年）度の採用情報</a>を更新しました。
+            <span class="tab tag_<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_slug; } ?>"><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?></span>
+            <a href="<?php the_permalink(); ?>/sample"><?php the_title(); ?></a>を更新しました。
           </dd>
-          <dt>2013-08-03</dt>
-          <dd>
-            <span class="tab tag_release">リリース</span>
-            <a href="sample.html">制作実績のページ</a>を更新しました。
-          </dd>
-          <dt>2013-08-02</dt>
-          <dd>
-            <span class="tab tag_gyoumu">業務について</span>
-            <a href="sample.html">2012年（平成24年）度の採用情報</a>を更新しました。
-          </dd>
-          <dt>2013-08-01</dt>
-          <dd>
-            <span class="tab tag_gyoumu">業務について</span>
-            <a href="sample.html">制作実績のページ</a>を更新しました。
-          </dd>
+          <?php endforeach; ?>
         </dl>
       </div><!-- /.information -->
       <div class="information">
         <h2>Blog</h2>
         <dl>
-          <dt>2013-08-04</dt>
+          <?php
+            $infoPosts = get_posts('numberposts=3&category=4');
+            foreach($infoPosts as $post):
+          ?>
+          <dt><?php the_time('Y-m-d'); ?></dt>
           <dd>
             <div class="b_img">
-              <img src="images/sample.png">
+              <?php the_post_thumbnail('thumbside'); ?>
             </div>
             <div class="b_right">
-              <a href="sample.html">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
+              <a href="<?php the_permalink(); ?>/sample"><?php the_title(); ?></a>
             </div>
           </dd>
-          <dt>2013-08-04</dt>
-          <dd>
-            <div class="b_img">
-              <img src="images/sample.png">
-            </div>
-            <div class="b_right">
-              <a href="sample.html">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
-            </div>
-          </dd>
-          <dt>2013-08-04</dt>
-          <dd>
-            <div class="b_img">
-              <img src="images/sample.png">
-            </div>
-            <div class="b_right">
-              <a href="sample.html">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
-            </div>
-          </dd>
-          <dt>2013-08-04</dt>
-          <dd>
-            <div class="b_img">
-              <img src="images/sample.png">
-            </div>
-            <div class="b_right">
-              <a href="sample.html">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</a>
-            </div>
-          </dd>
+          <?php endforeach; ?>
         </dl>
       </div><!-- /.information -->
       <div class="submenu">
