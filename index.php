@@ -40,7 +40,7 @@
           <dt><?php the_time('Y-m-d'); ?></dt>
           <dd>
             <span class="tab tag_<?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>"><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?></span>
-            <a href="<?php the_permalink(); ?>/sample"><?php the_title(); ?></a>を更新しました。
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>を更新しました。
           </dd>
           <?php endforeach; ?>
         </dl>
@@ -58,7 +58,7 @@
               <?php the_post_thumbnail('thumbside'); ?>
             </div>
             <div class="b_right">
-              <a href="<?php the_permalink(); ?>/sample"><?php the_title(); ?></a>
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </div>
           </dd>
           <?php endforeach; ?>
