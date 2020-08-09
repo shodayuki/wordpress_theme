@@ -20,16 +20,15 @@
         <h2>事業内容</h2>
         <div class="topNaviPhoto"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photo02.jpg" alt="#" /></div>
         <p>事業内容です。あいうえおかきくけこさしすせそたちつてとなにぬねの。</p>
-        <p class="topNaviDetail"><a href="service.html">詳しくはこちら</a></p>
+        <p class="topNaviDetail"><a href="<?php bloginfo('url'); ?>/service">詳しくはこちら</a></p>
       </div><!-- /.topNaviColumn -->
       <div class="topNaviColumn">
         <h2>会社概要</h2>
         <div class="topNaviPhoto"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photo03.jpg" alt="#" /></div>
         <p>会社概要です。左右のコンテンツでテキスト量が異なっても、下の｢詳しくはこちら｣が揃うようになっています。</p>
-        <p class="topNaviDetail"><a href="company.html">詳しくはこちら</a></p>
+        <p class="topNaviDetail"><a href="<?php bloginfo('url'); ?>/company">詳しくはこちら</a></p>
       </div><!-- /.topNaviColumn -->
     </div><!-- /.topNavi -->
-
     <div id="conL">
       <div class="information">
         <h2>INFORMATION</h2>
@@ -101,15 +100,15 @@
         <h3>サービス内容</h3>
         <p>ネット事業です。あいうえおかきくけこさしすせそたちつてとなにぬねのあいうえおかきくけこさしすせそたちつてとなにぬねのあいうえおかきくけこさしすせそたちつてとなにぬねの。</p>
         <ul>
-          <li><a href="service.html#s1">ホームページ制作</a></li>
-          <li><a href="service.html#s2">広告代理</a></li>
+          <li><a href="<?php bloginfo('url'); ?>/service#s1">ホームページ制作</a></li>
+          <li><a href="<?php bloginfo('url'); ?>/service#s2">広告代理</a></li>
         </ul>
       </div><!-- /.submenu -->
       <div class="bnrL">
         <ul>
-          <li><a href="index.html"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/bnr_l.jpg" alt="#" /></a></li>
-          <li><a href="index.html"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/bnr_l.jpg" alt="#" /></a></li>
-          <li><a href="index.html"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/bnr_l.jpg" alt="#" /></a></li>
+          <li><a href="<?php bloginfo('url'); ?>/"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/bnr_l.jpg" alt="#" /></a></li>
+          <li><a href="<?php bloginfo('url'); ?>/"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/bnr_l.jpg" alt="#" /></a></li>
+          <li><a href="<?php bloginfo('url'); ?>/"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/bnr_l.jpg" alt="#" /></a></li>
         </ul>
       </div><!-- /.bnrL -->
     </div><!-- /.conL -->
