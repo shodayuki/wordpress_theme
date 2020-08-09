@@ -45,6 +45,7 @@
         </dl>
       </div><!-- /.information -->
       <?php } ?>
+      <?php wp_pagenavi(); ?>
     </div><!-- /#conL -->
     <?php get_sidebar(); ?>
   </div><!-- /#contents -->
